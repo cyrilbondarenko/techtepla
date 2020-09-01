@@ -1,0 +1,223 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+footer .container {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer .container .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+footer .first {
+  justify-content: flex-start!important;
+  font-size: 16px;
+}
+
+footer .first span {
+  margin-top: 30px;
+}
+
+footer .first span {
+  color: #777777;
+}
+
+footer .first a {
+  color: #c0922a;
+  text-decoration: none;
+}
+
+footer .second ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+footer .second a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer .second a:hover{
+  color: #d09412;
+  transition: 0.5s;
+}
+
+.third > div {
+  display: flex;
+  align-items: center;
+}
+
+.third img {
+  margin-right: 15px;
+}
+
+.third a {
+  text-decoration: none;
+  color: white;
+}
+
+.third .numbers {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.third .mail {
+  font-size: 16px;
+}
+
+.fourth .geo {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+.fourth .geo img {
+  margin-right: 10px;
+}
+
+.fourth .media {
+  display: flex;
+}
+
+.media a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.media a:last-child {
+  margin-right: 0;
+}
+
+.media .facebook {
+  background: url(../images/facebook.png);
+  background-size: 40px;
+}
+
+.media .facebook:hover {
+  background: url(../images/facebook-1.png);
+  background-size: 40px;
+  transition: 0.5s;
+}
+
+.media .twitter {
+  background: url(../images/twitter.png);
+  background-size: 40px;
+}
+
+.media .twitter:hover {
+  background: url(../images/twitter-1.png);
+  background-size: 40px;
+  transition: 0.5s;
+}
+
+.media .instagram {
+  background: url(../images/insta.png);
+  background-size: 40px;
+}
+
+.media .instagram:hover {
+  background: url(../images/insta-1.png);
+  background-size: 40px;
+  transition: 0.5s;
+}
+
+.media .skype {
+  background: url(../images/skype.png);
+  background-size: 40px;
+}
+
+.media .skype:hover {
+  background: url(../images/skype-1.png);
+  background-size: 40px;
+  transition: 0.5s;
+}
+
+footer .third a:hover {
+  color: #d09412;
+  transition: 0.5s;
+}
+
+footer .fourth .geo:hover {
+  color: #d09412;
+  transition: 0.5s;
+}
+
+@media (max-width: 950px) {
+  footer .container {
+    height: auto;
+    flex-direction: column;
+  }
+  footer .first {
+    align-items: center;
+  }
+  footer .first img{
+    margin-bottom: 20px;
+  }
+  footer .first span{
+    margin-bottom: 10px;
+  }
+  footer .container .first a:last-child {
+    margin-bottom: 20px;
+  }
+  footer .container .second ul {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  footer .container .second ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  footer .container .third {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer .container .fourth {
+    align-items: center;
+  }
+  footer .container .fourth .geo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  footer .container .third .phone {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  footer .container .first img {
+    width: 100%;
+  }
+  footer .container .second ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .container .second ul a {
+    font-size: 20px;
+  }
+  footer .container .second ul li {
+    margin-bottom: 7px;
+  }
+}
